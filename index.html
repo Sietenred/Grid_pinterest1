@@ -3,166 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Instagram</title>
+    <title>Pinterest</title>
     <style>
-        body {
-            margin: 0;
-            font-family: Arial;
-        }
-        .post {
-            cursor: pointer;
-            position: relative;
-            display: block;
-        }
-        .post-list {
+        .container {
             display: grid;
-            grid-template-columns: repeat(3, minmax(100px, 293px));
+            grid-template-columns: repeat(3, 250px);
+            gap: 5px;
             justify-content: center;
-            gap: 28px;
-        }
-        .post-image {
-            margin: 0;
-        }
-        .post-image img {
-            width: 100%;
-            vertical-align: top;
-        }
-        .post-overlay {
-            background: rgba(0,0,0,.4);
-            position: absolute;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            top: 0;
-            display: none;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            text-align: center;
-        }
-        .post:hover .post-overlay {
-            display: flex;
-        }
-        .post-likes,
-        .post-comments {
-            width: 80px;
-            margin: 5px;
-            font-weight: bold;
-            text-align: center;
-            display: inline-block;
-        }
 
-        @media screen and (max-width: 768px) {
-            .post-list {
-
-            gap: 3px;
         }
+        .item {
+            border-radius: 5px;
+            padding: 10px;
+            background: #f2f2f2;
+       
+        }
+        .level-1 {
+        grid-row-end: span 3;
+        }
+        .level-2 {
+        grid-row-end: span 2;
+        }
+        .level-3 {
+        grid-row-end: span 1;
+        }
+        .item img {
+            max-width: 100%;
         }
     </style>
 </head>
 <body>
-    <section class="post-list">
-        <a href="" class="post">
-            <figure class="post-image">
-            <img src="./assets/FONDO-SIETE.png" alt="" class="compu jpg">
-            </figure>
-            <span class="post-overlay">
-                <p>
-                <span class="post-likes">150</span>
-                <span class="post-comments">300</span>
-                </p>
-            </span>
-        </a>
-        <a href="" class="post">
-            <figure class="post-image">
-            <img src="./assets/FONDO-SIETE.png" alt="" class="compu jpg">
-            </figure>
-            <span class="post-overlay">
-                <p>
-                <span class="post-likes">150</span>
-                <span class="post-comments">300</span>
-                </p>
-            </span>
-        </a>
-        <a href="" class="post">
-            <figure class="post-image">
-            <img src="./assets/FONDO-SIETE.png" alt="" class="compu jpg">
-            </figure>
-            <span class="post-overlay">
-                <p>
-                <span class="post-likes">150</span>
-                <span class="post-comments">300</span>
-                </p>
-            </span>
-        </a>
-        <a href="" class="post">
-            <figure class="post-image">
-            <img src="./assets/FONDO-SIETE.png" alt="" class="compu jpg">
-            </figure>
-            <span class="post-overlay">
-                <p>
-                <span class="post-likes">150</span>
-                <span class="post-comments">300</span>
-                </p>
-            </span>
-        </a>
-        <a href="" class="post">
-            <figure class="post-image">
-            <img src="./assets/FONDO-SIETE.png" alt="" class="compu jpg">
-            </figure>
-            <span class="post-overlay">
-                <p>
-                <span class="post-likes">150</span>
-                <span class="post-comments">300</span>
-                </p>
-            </span>
-        </a>
-        <a href="" class="post">
-            <figure class="post-image">
-            <img src="./assets/FONDO-SIETE.png" alt="" class="compu jpg">
-            </figure>
-            <span class="post-overlay">
-                <p>
-                <span class="post-likes">150</span>
-                <span class="post-comments">300</span>
-                </p>
-            </span>
-        </a>
-        <a href="" class="post">
-            <figure class="post-image">
-            <img src="./assets/FONDO-SIETE.png" alt="" class="compu jpg">
-            </figure>
-            <span class="post-overlay">
-                <p>
-                <span class="post-likes">150</span>
-                <span class="post-comments">300</span>
-                </p>
-            </span>
-        </a>
-        <a href="" class="post">
-            <figure class="post-image">
-            <img src="./assets/FONDO-SIETE.png" alt="" class="compu jpg">
-            </figure>
-            <span class="post-overlay">
-                <p>
-                <span class="post-likes">150</span>
-                <span class="post-comments">300</span>
-                </p>
-            </span>
-        </a>
-        <a href="" class="post">
-            <figure class="post-image">
-            <img src="./assets/FONDO-SIETE.png" alt="" class="compu jpg">
-            </figure>
-            <span class="post-overlay">
-                <p>
-                <span class="post-likes">150</span>
-                <span class="post-comments">300</span>
-                </p>
-            </span>
-        </a>
-
-    </section>
-    
+    <div class="container">
+        <div class="item level-3">
+            <img src="./assets/house_3efda176-6e03-442d-9749-67736a0776d4.jpg" alt="">
+        </div>
+        <div class="item level-1">
+            <img src="./assets/landing_1c67bffd-7af0-4bd0-8370-d640b64c7842.jpg" alt="">
+        </div>
+        <div class="item level-2">
+            <img src="./assets/tshirt_5c8c539f-1867-4641-9a68-e27486424f76.jpg" alt="">
+        </div>
+        <div class="item level-3">
+            <img src="./assets/house_3efda176-6e03-442d-9749-67736a0776d4.jpg" alt="">
+        </div>
+        <div class="item level-1">
+            <img src="./assets/landing_1c67bffd-7af0-4bd0-8370-d640b64c7842.jpg" alt="">
+        </div>
+        <div class="item level-2">
+            <img src="./assets/tshirt_5c8c539f-1867-4641-9a68-e27486424f76.jpg" alt="">
+        </div>
+        <div class="item level-3">
+            <img src="./assets/house_3efda176-6e03-442d-9749-67736a0776d4.jpg" alt="">
+        </div>
+        <div class="item level-1">
+            <img src="./assets/landing_1c67bffd-7af0-4bd0-8370-d640b64c7842.jpg" alt="">
+        </div>
+        <div class="item level-2">
+            <img src="./assets/tshirt_5c8c539f-1867-4641-9a68-e27486424f76.jpg" alt="">
+        </div>
+        <div class="item level-3">
+            <img src="./assets/house_3efda176-6e03-442d-9749-67736a0776d4.jpg" alt="">
+        </div>
+        <div class="item level-1">
+            <img src="./assets/landing_1c67bffd-7af0-4bd0-8370-d640b64c7842.jpg" alt="">
+        </div>
+        <div class="item level-2">
+            <img src="./assets/tshirt_5c8c539f-1867-4641-9a68-e27486424f76.jpg" alt="">
+        </div>
+        <div class="item level-3">
+            <img src="./assets/house_3efda176-6e03-442d-9749-67736a0776d4.jpg" alt="">
+        </div>
+        <div class="item level-1">
+            <img src="./assets/landing_1c67bffd-7af0-4bd0-8370-d640b64c7842.jpg" alt="">
+        </div>
+        <div class="item level-2">
+            <img src="./assets/tshirt_5c8c539f-1867-4641-9a68-e27486424f76.jpg" alt="">
+        </div>
+        <div class="item level-3">
+            <img src="./assets/house_3efda176-6e03-442d-9749-67736a0776d4.jpg" alt="">
+        </div>
+        <div class="item level-1">
+            <img src="./assets/landing_1c67bffd-7af0-4bd0-8370-d640b64c7842.jpg" alt="">
+        </div>
+        <div class="item level-2">
+            <img src="./assets/tshirt_5c8c539f-1867-4641-9a68-e27486424f76.jpg" alt="">
+        </div>
+    </div>
 </body>
 </html>
